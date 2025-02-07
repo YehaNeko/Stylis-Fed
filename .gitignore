@@ -1,0 +1,16 @@
+.DS_Store
+/Packages
+/*.lock
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+
+# Pesde
+.pesde
+roblox_packages
+lune_packages
+luau_packages
+
+# Rojo
+sourcemap.json

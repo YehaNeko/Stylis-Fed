@@ -1,0 +1,42 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+env:
+  filename: StylisFed-${{ github.ref_name }}.rbxm
+
+jobs:
+    build:
+        name: Build
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v4
+
+          - name: Setup Pesde
+            uses: lumin-org/setup-pesde@v0.3.2
+            with:
+              cache: true
+
+          - name: Install dependencies
+            run: pesde install
+
+          - name: Build rbxm
+            run: rojo build standalone.project.json --output ./${{ env.filename }}
+
+          - name: Standalone release
+            uses: softprops/action-gh-release@v2
+            with:
+              tag_name: ${{ github.ref_name }}
+              name: ${{ github.ref_name }}
+              prerelease: ${{ contains(github.ref_name, 'rc') }}
+              generate_release_notes: true
+              files: |
+                ./${{ env.filename }}
