@@ -286,8 +286,8 @@ return {
 		were cheating in game without any concrete evidence. She regularly hid these moderation actions by masking them as roblox related issues by stating
 		reasons like "Error Code: 103" or "Bad API Request: 217" in order to get away with it. When her perms were revoked she had a meltdown about it claiming
 		that the admins were attacking her and overreacting about it, then when she lost staff completely she threatened self-harm and suicide.
-		Oh, and in typical Stylis fashion, she was reported by someone for allegedly chatting up a 16-17 year old while being well over 20 years old at the time,
-		with the person reporting being the supposed victim themself.
+		Oh, and in typical Stylis fashion, she was reported by someone for chatting up a 16-17 year old while being well over 20 years old at the time,
+		with the person reporting being the victim themself.
 
 		Did you know that Stylis denied the staff applications from one of us for being mentally unstable? lol
 	]]
